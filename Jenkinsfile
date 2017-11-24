@@ -9,7 +9,8 @@ node {
 
     stage('Build image') {
         /* This builds the actual image; synonymous to
-         * docker build on the command line */
+         * docker build on the command line
+         * the best way is define the image name with docker userID*/
 
         app = docker.build("1293813551/hellonode")
     }
